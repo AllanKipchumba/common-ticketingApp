@@ -1,15 +1,15 @@
 {
   "name": "@ak-tickets-reuse/common",
-  "version": "1.0.9",
+  "version": "1.0.7",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
-    ".build/**/*"
+    "build/**/*"
   ],
   "scripts": {
     "clean": "del /S /Q /F build\\*",
-    "build": "npm run clean && tsc",
+    "build": "tsc",
     "pub": "git add . && git commit -m \"updates\" && git push && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
