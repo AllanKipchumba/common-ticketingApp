@@ -2,6 +2,9 @@ import { Subjects } from "./subjects";
 
 export interface PaymentCreatedEvent {
   subject: Subjects.PaymentCreated;
-  orderId: string;
-  stripeId: string;
+  data: {
+    id: string;
+    orderId: string;
+    stripeId: string;
+  };
 }
